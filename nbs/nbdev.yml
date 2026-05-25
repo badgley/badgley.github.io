@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "badgley-blog"
+  site-url: "https://badgley.github.io/badgley-blog"
+  description: ""
+  repo-branch: main
+  repo-url: "https://github.com/badgley/badgley-blog"

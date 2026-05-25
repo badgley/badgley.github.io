@@ -1,0 +1,267 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Writing</title>
+    <link rel="canonical" href="https://localhost:5002/writing">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<script src="https://cdn.jsdelivr.net/npm/htmx.org@2.0.7/dist/htmx.js"></script><script src="https://cdn.jsdelivr.net/gh/answerdotai/fasthtml-js@1.0.12/fasthtml.js"></script><script src="https://cdn.jsdelivr.net/gh/answerdotai/surreal@main/surreal.js"></script><script src="https://cdn.jsdelivr.net/gh/gnat/css-scope-inline@main/script.js"></script>    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/franken-ui@2.0.0/dist/css/core.min.css">
+<script type="module" src="https://cdn.jsdelivr.net/npm/franken-ui@2.0.0/dist/js/core.iife.js"></script><script src="https://cdn.tailwindcss.com/3.4.17"></script><script>
+    tailwind.config = {
+        darkMode: 'selector',
+    }
+    </script><script>
+        const htmlElement = document.documentElement;
+        
+          
+          const __FRANKEN__ = JSON.parse(localStorage.getItem("__FRANKEN__") || "{}");
+    
+          if (
+            __FRANKEN__.mode === "dark" ||
+            (!__FRANKEN__.mode &&
+              window.matchMedia("(prefers-color-scheme: dark)").matches)
+          ) {
+            htmlElement.classList.add("dark");
+          } else {
+            htmlElement.classList.remove("dark");
+          }
+        
+          htmlElement.classList.add(__FRANKEN__.theme || "uk-theme-blue");
+          htmlElement.classList.add(__FRANKEN__.radii || "uk-radii-sm");
+          htmlElement.classList.add(__FRANKEN__.shadows || "uk-shadows-sm");
+          htmlElement.classList.add(__FRANKEN__.font || "uk-font-sm");
+    </script>    <style>
+.monster-navbar.navbar-bold a {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.monster-navbar.navbar-bold a.uk-active {
+    transform: scale(1.15) ;
+    font-weight: bold;
+    text-shadow: 0 0 12px rgba(var(--p-rgb), 0.4);
+    letter-spacing: 0.02em;
+    color: hsl(var(--p) / 1);
+}
+.monster-navbar.navbar-underline a.uk-active { position: relative; }
+.monster-navbar.navbar-underline a.uk-active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background: currentColor;
+    animation: slideIn 0.3s ease forwards;
+}
+@keyframes slideIn {
+    from { transform: scaleX(0); }
+    to { transform: scaleX(1); }
+}
+</style>
+<script type="module" src="https://cdn.jsdelivr.net/npm/franken-ui@2.0.0/dist/js/icon.iife.js"></script>    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css">
+    <style>
+:root {
+  --b1: from hsl(var(--background)) l c h;
+  --bc: from hsl(var(--foreground)) l c h;
+  --m: from hsl(var(--muted)) l c h;
+  --mc: from hsl(var(--muted-foreground)) l c h;
+  --po: from hsl(var(--popover)) l c h;
+  --poc: from hsl(var(--popover-foreground)) l c h;
+  --b2: from hsl(var(--card)) l c h;
+  --b2c: from hsl(var(--card-foreground)) l c h;
+  --br: from hsl(var(--border)) l c h;
+  --in: from hsl(var(--input)) l c h;
+  --p: from hsl(var(--primary)) l c h;
+  --pc: from hsl(var(--primary-foreground)) l c h;
+  --s: from hsl(var(--secondary)) l c h;
+  --sc: from hsl(var(--secondary-foreground)) l c h;
+  --a: from hsl(var(--accent)) l c h;
+  --ac: from hsl(var(--accent-foreground)) l c h;
+  --er: from hsl(var(--destructive)) l c h;
+  --erc: from hsl(var(--destructive-foreground)) l c h;
+  --b3: from hsl(var(--ring)) l c h;
+  --ch1: from hsl(var(--chart-1)) l c h;
+  --ch2: from hsl(var(--chart-2)) l c h;
+  --ch3: from hsl(var(--chart-3)) l c h;
+  --ch4: from hsl(var(--chart-4)) l c h;
+  --ch5: from hsl(var(--chart-5)) l c h;
+  --rd: var(--radius);
+}
+</style>
+  </head>
+  <body class=" bg-background text-foreground">
+    <div class="min-h-screen flex flex-col">
+      <nav class="monster-navbar flex flex-wrap items-center justify-between w-full p-3  ">
+<a href="/">          <h3 class="uk-h3 ">Grayson Badgley</h3>
+</a><button aria-controls="mobile-menu" type="button" data-uk-toggle="target: #mobile-menu; cls: hidden" class="md:hidden inline-flex items-center justify-center uk-rounded focus:outline-none focus:ring-2 p-2"><span class="sr-only">Open main menu</span><uk-icon icon="menu" height="24" width="24" class="size-6"></uk-icon></button>        <div id="mobile-menu" class="hidden mt-2 md:mt-0 w-full md:block md:w-auto ">
+          <div class="flex gap-3 flex-col items-end md:flex-row md:items-center md:gap-3">
+<a href="/">about</a><a href="/notes">notes</a><a href="/writing">writing</a>          </div>
+        </div>
+      </nav>
+      <div class="uk-container uk-container-xs space-y-4 pt-16">
+        <h2 class="uk-h2 ">Writing</h2>
+        <h2 class="uk-h2 ">Research</h2>
+        <div class="space-y-4">
+<a href="https://eartharxiv.org/repository/view/12767/" class="block space-y-2 text-black hover:text-purple-600 transition-colors">            <div class="text-left">
+              <p>
+<strong class="font-bold ">Evidence of non-additional pig manure offset projects</strong>              </p>
+              <p class="!text-black">
+Grayson Badgley + Freya Chay (2026), <strong class="font-bold ">EarthArXiv</strong>              </p>
+            </div>
+</a><a href="https://doi.org/10.1038/s41586-025-09116-6" class="block space-y-2 text-black hover:text-purple-600 transition-colors">            <div class="text-left">
+              <p>
+<strong class="font-bold ">Towards more effective nature-based climate solutions in global forests</strong>              </p>
+              <p class="!text-black">
+Bill Anderegg et al. (2025), <strong class="font-bold ">Nature</strong>              </p>
+            </div>
+</a><a href="https://doi.org/10.1016/j.oneear.2024.05.007" class="block space-y-2 text-black hover:text-purple-600 transition-colors">            <div class="text-left">
+              <p>
+<strong class="font-bold ">Funding forests' climate potential without carbon offsets</strong>              </p>
+              <p class="!text-black">
+Libby Blanchard et al. (2024), <strong class="font-bold ">One Earth</strong>              </p>
+            </div>
+</a><a href="https://doi.org/10.1016/j.oneear.2023.09.003" class="block space-y-2 text-black hover:text-purple-600 transition-colors">            <div class="text-left">
+              <p>
+<strong class="font-bold ">Carbon offsets are incompatible with the Paris Agreement</strong>              </p>
+              <p class="!text-black">
+Danny Cullenward et al. (2023), <strong class="font-bold ">One Earth</strong>              </p>
+            </div>
+</a><a href="https://doi.org/10.1111/ele.14018" class="block space-y-2 text-black hover:text-purple-600 transition-colors">            <div class="text-left">
+              <p>
+<strong class="font-bold ">Future climate risks from stress, insects and fire across US forests</strong>              </p>
+              <p class="!text-black">
+Bill Anderegg et al. (2022), <strong class="font-bold ">Ecology Letters</strong>              </p>
+            </div>
+</a><a href="https://doi.org/10.1016/j.rse.2021.112763" class="block space-y-2 text-black hover:text-purple-600 transition-colors">            <div class="text-left">
+              <p>
+<strong class="font-bold ">NIRVP: A robust structural proxy for sun-induced chlorophyll fluorescence and photosynthesis across scales</strong>              </p>
+              <p class="!text-black">
+Ben Dechant et al. (2022), <strong class="font-bold ">Remote Sensing of Environment</strong>              </p>
+            </div>
+</a><a href="https://doi.org/10.1016/j.rse.2021.112856" class="block space-y-2 text-black hover:text-purple-600 transition-colors">            <div class="text-left">
+              <p>
+<strong class="font-bold ">Combining near-infrared radiance of vegetation and fluorescence spectroscopy to detect effects of abiotic changes and stresses</strong>              </p>
+              <p class="!text-black">
+Yelu Zeng et al. (2022), <strong class="font-bold ">Remote Sensing of Environment</strong>              </p>
+            </div>
+</a><a href="https://doi.org/10.1111/gcb.16380" class="block space-y-2 text-black hover:text-purple-600 transition-colors">            <div class="text-left">
+              <p>
+<strong class="font-bold ">Using remote sensing to quantify the additional climate benefits of California forest carbon offset projects</strong>              </p>
+              <p class="!text-black">
+Shane Coffield et al. (2022), <strong class="font-bold ">Global Change Biology</strong>              </p>
+            </div>
+</a><a href="https://doi.org/10.3389/ffgc.2022.930426" class="block space-y-2 text-black hover:text-purple-600 transition-colors">            <div class="text-left">
+              <p>
+<strong class="font-bold ">California's forest carbon offsets buffer pool is severely undercapitalized</strong>              </p>
+              <p class="!text-black">
+Badgley et al. (2022), <strong class="font-bold ">Frontiers in Forests and Global Change</strong>              </p>
+            </div>
+</a><a href="https://doi.org/10.1111/gcb.15943" class="block space-y-2 text-black hover:text-purple-600 transition-colors">            <div class="text-left">
+              <p>
+<strong class="font-bold ">Systematic over‐crediting in California's forest carbon offsets program</strong>              </p>
+              <p class="!text-black">
+Badgley et al. (2022), <strong class="font-bold ">Global Change Biology</strong>              </p>
+            </div>
+</a><a href="https://doi.org/10.1016/j.rse.2021.112563" class="block space-y-2 text-black hover:text-purple-600 transition-colors">            <div class="text-left">
+              <p>
+<strong class="font-bold ">Estimating near-infrared reflectance of vegetation from hyperspectral data</strong>              </p>
+              <p class="!text-black">
+Yelu Zeng et al. (2021), <strong class="font-bold ">Remote Sensing of Environment</strong>              </p>
+            </div>
+</a><a href="https://doi.org/10.1016/j.rse.2020.111678" class="block space-y-2 text-black hover:text-purple-600 transition-colors">            <div class="text-left">
+              <p>
+<strong class="font-bold ">A radiative transfer model for solar induced fluorescence using spectral invariants theory</strong>              </p>
+              <p class="!text-black">
+Yelu Zeng et al. (2020), <strong class="font-bold ">Remote Sensing of Environment</strong>              </p>
+            </div>
+</a><a href="https://doi.org/10.1126/science.aaz7005" class="block space-y-2 text-black hover:text-purple-600 transition-colors">            <div class="text-left">
+              <p>
+<strong class="font-bold ">Climate-driven risks to the climate mitigation potential of forests</strong>              </p>
+              <p class="!text-black">
+Bill Anderegg et al. (2020), <strong class="font-bold ">Science</strong>              </p>
+            </div>
+</a><a href="https://doi.org/10.1038/s41558-020-00919-1" class="block space-y-2 text-black hover:text-purple-600 transition-colors">            <div class="text-left">
+              <p>
+<strong class="font-bold ">Divergent forest sensitivity to repeated extreme droughts</strong>              </p>
+              <p class="!text-black">
+Bill Anderegg et al. (2020), <strong class="font-bold ">Nature Climate Change</strong>              </p>
+            </div>
+</a><a href="https://doi.org/10.1029/2019JG005534" class="block space-y-2 text-black hover:text-purple-600 transition-colors">            <div class="text-left">
+              <p>
+<strong class="font-bold ">Outgoing near‐infrared radiation from vegetation scales with canopy photosynthesis across a spectrum of function, structure, physiological capacity, and weather</strong>              </p>
+              <p class="!text-black">
+Dennis Baldocchi et al. (2020), <strong class="font-bold ">Journal of Geophysical Research</strong>              </p>
+            </div>
+</a><a href="https://doi.org/10.1016/j.rse.2020.111733" class="block space-y-2 text-black hover:text-purple-600 transition-colors">            <div class="text-left">
+              <p>
+<strong class="font-bold ">Canopy structure explains the relationship between photosynthesis and sun-induced chlorophyll fluorescence in crops</strong>              </p>
+              <p class="!text-black">
+Ben Dechant et al. (2020), <strong class="font-bold ">Remote Sensing of Environment</strong>              </p>
+            </div>
+</a><a href="https://doi.org/10.1111/gcb.14729" class="block space-y-2 text-black hover:text-purple-600 transition-colors">            <div class="text-left">
+              <p>
+<strong class="font-bold ">Terrestrial gross primary production: Using NIRV to scale from site to globe</strong>              </p>
+              <p class="!text-black">
+Grayson Badgley et al. (2019), <strong class="font-bold ">Global Change Biology</strong>              </p>
+            </div>
+</a><a href="https://doi.org/10.1016/j.rse.2019.04.013" class="block space-y-2 text-black hover:text-purple-600 transition-colors">            <div class="text-left">
+              <p>
+<strong class="font-bold ">A practical approach for estimating the escape ratio of near-infrared solar-induced chlorophyll fluorescence</strong>              </p>
+              <p class="!text-black">
+Yelu Zeng et al. (2019), <strong class="font-bold ">Remote Sensing of Environment</strong>              </p>
+            </div>
+</a><a href="https://doi.org/10.1111/ele.12945" class="block space-y-2 text-black hover:text-purple-600 transition-colors">            <div class="text-left">
+              <p>
+<strong class="font-bold ">Within‐species patterns challenge our understanding of the leaf economics spectrum</strong>              </p>
+              <p class="!text-black">
+Leander Anderegg et al. (2018), <strong class="font-bold ">Ecology Letters</strong>              </p>
+            </div>
+</a><a href="https://doi.org/10.1126/science.aal3254" class="block space-y-2 text-black hover:text-purple-600 transition-colors">            <div class="text-left">
+              <p>
+<strong class="font-bold ">Mobile MUTE specifies subsidiary cells to build physiologically improved grass stomata</strong>              </p>
+              <p class="!text-black">
+Michael Raissig et al. (2017), <strong class="font-bold ">Science</strong>              </p>
+            </div>
+</a><a href="https://doi.org/10.1126/sciadv.1602244" class="block space-y-2 text-black hover:text-purple-600 transition-colors">            <div class="text-left">
+              <p>
+<strong class="font-bold ">Canopy near-infrared reflectance and terrestrial photosynthesis</strong>              </p>
+              <p class="!text-black">
+Grayson Badgley et al. (2017), <strong class="font-bold ">Science Advances</strong>              </p>
+            </div>
+</a><a href="https://doi.org/10.1111/gcb.13136" class="block space-y-2 text-black hover:text-purple-600 transition-colors">            <div class="text-left">
+              <p>
+<strong class="font-bold ">Improving the monitoring of crop productivity using spaceborne solar‐induced fluorescence</strong>              </p>
+              <p class="!text-black">
+Kaiyu Guan et al. (2016), <strong class="font-bold ">Global Change Biology</strong>              </p>
+            </div>
+</a><a href="https://doi.org/10.1175/JHM-D-14-0040.1" class="block space-y-2 text-black hover:text-purple-600 transition-colors">            <div class="text-left">
+              <p>
+<strong class="font-bold ">On uncertainty in global terrestrial evapotranspiration estimates from choice of input forcing datasets</strong>              </p>
+              <p class="!text-black">
+Grayson Badgley et al. (2015), <strong class="font-bold ">Journal of Hydrometeorology</strong>              </p>
+            </div>
+</a><a href="https://doi.org/10.1098/rspb.2013.0171" class="block space-y-2 text-black hover:text-purple-600 transition-colors">            <div class="text-left">
+              <p>
+<strong class="font-bold ">Forest productivity and water stress in Amazonia: Observations from GOSAT chlorophyll fluorescence</strong>              </p>
+              <p class="!text-black">
+Jung-Eun Lee et al. (2013), <strong class="font-bold ">Proceedings of the Royal Society B</strong>              </p>
+            </div>
+</a><a href="https://doi.org/10.1029/2011GB004252" class="block space-y-2 text-black hover:text-purple-600 transition-colors">            <div class="text-left">
+              <p>
+<strong class="font-bold ">Global nutrient limitation in terrestrial vegetation</strong>              </p>
+              <p class="!text-black">
+Josh Fisher et al. (2012), <strong class="font-bold ">Global Biogeochemical Cycles</strong>              </p>
+            </div>
+</a><a href="https://doi.org/10.1029/2011GL048738" class="block space-y-2 text-black hover:text-purple-600 transition-colors">            <div class="text-left">
+              <p>
+<strong class="font-bold ">New global observations of the terrestrial carbon cycle from GOSAT: Patterns of plant fluorescence with gross primary productivity</strong>              </p>
+              <p class="!text-black">
+Christian Frankenberg et al. (2011), <strong class="font-bold ">Geophysical Research Letters</strong>              </p>
+            </div>
+</a>        </div>
+      </div>
+      <div class="uk-container mt-auto pb-4">
+<hr class="my-4 h-[2px] w-full bg-secondary">        <p class="uk-text-lead text-sm">powered by fasthtml</p>
+      </div>
+    </div>
+  </body>
+</html>
