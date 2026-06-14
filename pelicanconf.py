@@ -35,3 +35,6 @@ DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
 # RELATIVE_URLS = True
+
+
+INDEX_SAVE_AS = 'notes/index.html' # don't autogenerate index.html

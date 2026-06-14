@@ -1,11 +1,17 @@
-header {
+
+article header a {
+  	  color: black;
+	    text-decoration: none;
+    }
+    
+body > header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	padding: 1rem 2rem;
 }
 
-header a {
+body > header a {
 	color: black;
 	text-decoration: none;
 }
@@ -32,4 +38,32 @@ header nav a {
 	margin: 0 auto;
 	padding: 0 1rem;
 }
+
+body {
+	font-family: 'Inter', sans-serif;
+}
+
+.page a {
+	color: black;
+}
+
+
+.page p {
+	margin-bottom: 1.45rem;
+}
+  
+
+article header h2 a:hover {
+	color: purple;
+}
+
+article header h2 {
+	margin: 0;
+	padding: 0;
+        text-align: left;
+}
+
+.page li {
+	  margin-bottom: 0.6rem;
+  }
 
